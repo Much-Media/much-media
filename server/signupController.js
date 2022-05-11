@@ -1,4 +1,9 @@
-const db = require('./model.js');
+let db = require('./model.js');
+
+if (process.env.NODE_ENV === 'test') {
+  db = require('../__test__/modeltest.js');
+}
+
 const bcrypt = require('bcrypt');
 const saltRounds = 5; // make larger for added security
 

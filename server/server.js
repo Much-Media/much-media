@@ -37,6 +37,11 @@ app.get('/bundle.js', (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../public/bundle.js'));
 });
 
+app.get('/', (req, res) => {
+  console.log('made get html request');
+  res.status(200).sendFile(path.resolve(__dirname, '../public/index.html'));
+});
+
 app.use((err, req, res, next) => {
   const defaultErr = {
     log: 'Express error handler caught unknown middleware error',

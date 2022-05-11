@@ -7,7 +7,7 @@
     "start": "nodemon server/server.js",
     "build": "webpack",
     "dev": "webpack serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --update-snapshot --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -36,16 +36,21 @@
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.4",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "nodemon": "^2.0.16",
     "postcss-loader": "^6.2.1",
+    "regenerator-runtime": "^0.13.9",
     "sass": "^1.51.0",
     "sass-loader": "^12.6.0",
     "source-map-loader": "^3.0.1",
     "style-loader": "^3.3.1",
+    "supertest": "^6.2.3",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
