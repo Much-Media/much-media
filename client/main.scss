@@ -2,11 +2,17 @@
 @import "~bootstrap/scss/bootstrap";
 
 .border {
-color: blue;
+    color: blue;
 }
 
 .high {
     background-color: black;
+}
+
+.feed {
+    border: 10px;
+    border-color: blue;
+    background-color: green;
 }
 
 .loginText {
