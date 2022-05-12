@@ -8,6 +8,8 @@ const mediaController = {};
 // create review connecting user id, media id, and rest of post request
 
 mediaController.findMedia = (req, res, next) => {
+  // console.log(process.env.DATABASE_CONNECTION_STRING);
+
   const media = req.body;
   // console.log('media: ', media);
   // console.log('properties', media.type, media.title)

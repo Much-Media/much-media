@@ -26,7 +26,7 @@ const app = require('../server/server');
 // });
 
 
-describe('app unit tests', () => {
+xdescribe('app unit tests', () => {
   // const { server } = require('../public/bundle');
   // afterAll(async () => {
   //   server.close();
@@ -45,8 +45,8 @@ describe('app unit tests', () => {
       //     if (err) throw err;
       //   });
 
-      const response = await request(app).get('/home')
-      console.log(response)
+      const response = await request(app).get('/home');
+      // console.log(response)
 
 
       // const response = await supertest(app).get('/home');
