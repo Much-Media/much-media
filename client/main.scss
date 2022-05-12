@@ -1,14 +1,83 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 
+#app-container a {
+  text-decoration: none;
+  display: flex;
+  margin: 10px;
+}
+
+#app-container a:hover {
+  text-decoration: underline;
+}
+
 .border {
-color: blue;
+    color: blue;
 }
 
 .high {
     background-color: black;
 }
 
-.loginText {
-    color: white
+// .navbar {
+//     margin: 2px;
+// }
+
+.feed {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
 }
+
+.loginText {
+  color: white
+}
+
+.feedDisplay {
+  background-color: #e1f2f8;
+}
+
+.media-title {
+  border: 2px solid black;
+  box-sizing: content-box;
+  margin-left: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  top: 25px;
+}
+
+.media-type {
+  border: 2px solid black;
+  box-sizing: content-box;
+  padding-bottom: 30%;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+
+.recommend {
+  border: 2px solid black;
+  box-sizing: content-box;
+  left: 50px;
+  margin-left: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  top: 25px;
+}
+
+.username {
+  border: 2px solid black;
+  box-sizing: content-box;
+  margin-left: 50px;
+  padding-bottom: 30px;
+  position: relative;
+  top: 25px;
+  max-width: 100px;
+}
+
+
