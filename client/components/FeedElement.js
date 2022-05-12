@@ -8,24 +8,69 @@ import React from 'react'
 // make it look pretty
 
 export default function FeedElement(props) {
-  console.log(props)
+  /*
+    async function getData() {
+      const response = await fetch('/media');
+      const data = await response.json();
+      console.log(data)
+      const {
+        id = data[1]['_id'],
+        username = data[1]['username'],
+        // mediaType = data[1]['email'],
+        // mediaTitle = data[1]['username'],
+        // reccomend = data[1]['address'],
+        // review = data[1]['address']
+      } = data
+    }
+  */
+  /*
+  fetch('/media', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  })
+    .then((res) => {
+      console.log(res);
+      if (res.status === 200) {
+        // navigate('/home');
+        alert('Getting feed info');
+        res.json;
+      } else {
+        throw new Error('Error with getting feed info');
+      }
+    })
+    .then((body) => {
+      console.log('body: ', body);
+
+      // navigate('/home');
+    })
+    .catch((err) => console.log(err));
+    */
+
+  // console.log(props)
   // let rating;
   // if (props.review.rating === 1) {
-  //   rating = <p className="btn card-rating btn-success fs-4" style={{ width: '50%', height: '3em' }}>alotl</p>
+  //   rating = <p className="btn card-rating btn-success fs-4" style={{ width: '10em', height: '3em' }}>alotl</p>
   // } else {
-  //   rating = <p className="btn card-rating btn-danger fs-4" style={{ width: '50%', height: '3em' }}>not alotl</p>
+  //   rating = <p className="btn card-rating btn-danger fs-4" style={{ width: '10em', height: '3em' }}>not alotl</p>
   // }
-  console.log('getting to rendering feed element')
+  // console.log('getting to rendering feed element')
   return (
     <div className='feed' style={{ width: '75rem', height: '5em' }}>
       <div className='feed-rows'>
-        <span className='media-type'>Media Type</span>
+        <span className='media-type'>Media Type: ""   -   </span>
         {/* <img className="card-img-top" src="" alt="Card image cap"></img> */}
-        <span className='username'>Username</span>
-        <span className='media-title'>{props.review.title}</span>
-        <span className='reccommend'>Recommend</span>
-        <span className='review'>Review</span>
-
+        <span className='username'>Username: ""   -   </span>
+        <span className='media-title'>Title: ""   -   </span>
+        <span className='reccommend'>Recommend: ""</span>
+        {/* <div className='review'>Review: ""</div> */}
+        {/* <span className='media-type'>Media Type: "{props.review.type}"   -   </span>
+        {/* <img className="card-img-top" src="" alt="Card image cap"></img> */}
+        {/* <span className='username'>Username: ""   -   </span>
+        <span className='media-title'>Title: "{props.review.title}"   -   </span>
+        <span className='reccommend'>Recommend: "{rating}"</span>
+        <div className='review'>Review: "{props.review.review}"</div> */}
       </div>
     </div>
     // <div className='col-auto h-100 '>

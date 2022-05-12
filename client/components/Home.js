@@ -20,9 +20,9 @@ export default function Home(props) {
     return <MediaCard review={el} />
   })
 
-  const feedElements = reviews.map(el => {
-    return <FeedElement review={el} />
-  })
+  // const feedElements = reviews.map(el => {
+  //   return <FeedElement review={el} />
+  // })
 
   return (
     <div id='reviews-container' className='container'>
@@ -31,8 +31,8 @@ export default function Home(props) {
         <CreateMediaCard handleNewReview={handleNewReview} />
         {mediaCards}
       </div>
-      {feedElements}
-      {/* <FeedElement /> */}
+      {/* {feedElements} */}
+      <FeedElement />
     </div>
   )
 }

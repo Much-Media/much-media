@@ -9,12 +9,27 @@
     background-color: black;
 }
 
+// .navbar {
+//     margin: 2px;
+// }
+
 .feed {
-    border: 10px;
-    border-color: blue;
-    background-color: green;
+    background-color: white;
+    // border-color: blue;
+    // border: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .loginText {
     color: white
 }
+
+.feedDisplay {
+    background-color: #e1f2f8;
+}
+
+// I'm trying, Lord knows I'm trying :/

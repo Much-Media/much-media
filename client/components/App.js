@@ -7,6 +7,7 @@ function App(props) {
       <nav className="container-fluid navbar navbar-expand-lg navbar-light bg-light">
         <Link to="/home">Home</Link>
         <Link to="/login">Login</Link>
+        <Link to="/feed">Feed</Link>
       </nav>
       <div id='content-containeer' className='.container'>
         <Outlet />
