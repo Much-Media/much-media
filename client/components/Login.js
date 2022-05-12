@@ -7,8 +7,8 @@ export default function Login(props) {
 
   const navigate = useNavigate();
 
-  console.log('test', username);
-  console.log('password', password);
+  // console.log('test', username);
+  // console.log('password', password);
 
   function handleChangeUser(e) {
     const { value } = e.target;
@@ -49,7 +49,7 @@ export default function Login(props) {
         }
       })
       .then((body) => {
-        console.log('body: ', body);
+        // console.log('body: ', body);
 
         navigate('/home');
       })
