@@ -9,14 +9,14 @@ export default function Feed(props) {
 
   return (
     <div className="feedDisplay">
-      <FeedElement style={{ height: 50 }} />
-      <FeedElement style={{ height: 50 }} />
-      <FeedElement style={{ height: 50 }} />
-      <FeedElement style={{ height: 50 }} />
-      <FeedElement style={{ height: 50 }} />
-      <FeedElement style={{ height: 50 }} />
-      <FeedElement style={{ height: 50 }} />
-      <FeedElement style={{ height: 50 }} />
+      <FeedElement />
+      <FeedElement />
+      <FeedElement />
+      <FeedElement />
+      <FeedElement />
+      <FeedElement />
+      <FeedElement />
+      <FeedElement />
     </div>
   )
 }

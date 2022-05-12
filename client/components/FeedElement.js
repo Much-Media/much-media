@@ -57,13 +57,13 @@ export default function FeedElement(props) {
   // }
   // console.log('getting to rendering feed element')
   return (
-    <div className='feed' style={{ width: '75rem', height: '5em' }}>
+    <div className='feed' style={{ width: '75rem', height: '15em' }}>
       <div className='feed-rows'>
         <span className='media-type'>Media Type: ""   -   </span>
         {/* <img className="card-img-top" src="" alt="Card image cap"></img> */}
         <span className='username'>Username: ""   -   </span>
         <span className='media-title'>Title: ""   -   </span>
-        <span className='reccommend'>Recommend: ""</span>
+        <span className='recommend'>Recommend: ""</span>
         {/* <div className='review'>Review: ""</div> */}
         {/* <span className='media-type'>Media Type: "{props.review.type}"   -   </span>
         {/* <img className="card-img-top" src="" alt="Card image cap"></img> */}
