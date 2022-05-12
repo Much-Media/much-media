@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 const userApiRouter = require('./userApi.js');
 const mediaApiRouter = require('./mediaApi.js');
 const signupApiRouter = require('./signupApi.js');
+const followerApiRouter = require('./followerApi.js');
 
 const webpack = require('webpack');
 const config = require('../webpack.config');
@@ -26,6 +27,8 @@ app.use('/login', userApiRouter);
 app.use('/signup', signupApiRouter);
 
 app.use('/media', mediaApiRouter);
+
+app.use('/feed', followerApiRouter);
 
 app.get('/home', (req, res) => {
   console.log('made get html request');
