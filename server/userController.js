@@ -6,7 +6,7 @@ const userController = {};
 
 userController.findUser = (req, res, next) => {
   const currentUser = req.body;
-  console.log('req', req);
+  // console.log('req', req);
   const findQuery =
     // `SELECT * FROM "public"."User"`;
     // `SELECT * FROM "public"."User" WHERE username = 'antonio'`
@@ -21,8 +21,9 @@ userController.findUser = (req, res, next) => {
       let hash;
       res.locals.user[0] === undefined ? hash = '*' : hash = res.locals.user[0].password
       bcrypt.compare(currentUser.password, hash, function (err, result) {
-        if (result) return next();
-        console.log('no');
+        if (result) { return next(); }
+        // console.log('no');
+        res.locals.skipCookie = true;
         return next()
       });
     })

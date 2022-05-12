@@ -28,7 +28,8 @@ app.use('/signup', signupApiRouter);
 app.use('/media', mediaApiRouter);
 
 app.get('/home', (req, res) => {
-  console.log('made get html request');
+  console.log('made get html request at /home');
+  console.log('req.headers.cookie in /home get: ', req.headers.cookie)
   res.status(200).sendFile(path.resolve(__dirname, '../public/index.html'));
 });
 
@@ -38,7 +39,7 @@ app.get('/bundle.js', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  console.log('made get html request');
+  console.log('made get html request at /');
   res.status(200).sendFile(path.resolve(__dirname, '../public/index.html'));
 });
 
