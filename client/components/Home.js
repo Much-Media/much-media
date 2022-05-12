@@ -6,15 +6,6 @@ import { Link, Outlet } from 'react-router-dom';
 
 export default function Home(props) {
   const [reviews, setReviews] = useState([]);
-<<<<<<< HEAD
-
-  useEffect(() => {
-    fetch('profile')
-      .then(res => res.json())
-      .then(body => setReviews(body))
-  })
-
-=======
 
   // function checkUser() {
   //   fetch('/home', {
@@ -47,7 +38,6 @@ export default function Home(props) {
   //     .then(body => setReviews(body))
   // })
 
->>>>>>> dev
   function handleNewReview(review) {
     setReviews([review, ...reviews]);
   }
@@ -59,10 +49,6 @@ export default function Home(props) {
   //   return <FeedElement review={el} />
   // })
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
   return (
     <div id='reviews-container' className='container'>
       <Link to="/feed">Go to Feed</Link>
