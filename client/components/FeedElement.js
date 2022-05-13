@@ -64,7 +64,7 @@ export default function FeedElement(props) {
         <span className='username'>Username: ""   -   </span>
         <span className='media-title'>Title: ""   -   </span>
         <span className='recommend'>Recommend: ""</span>
-        {/* <div className='review'>Review: ""</div> */}
+        <div className='review' style={{height: '7em'}}>Review: ""</div>
         {/* <span className='media-type'>Media Type: "{props.review.type}"   -   </span>
         {/* <img className="card-img-top" src="" alt="Card image cap"></img> */}
         {/* <span className='username'>Username: ""   -   </span>

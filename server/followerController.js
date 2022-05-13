@@ -20,7 +20,7 @@ const followerController = {};
 followerController.findSubscribees = (req, res, next) => {
   // hard code userID = 1 for now
   // const { userID } = req.body;
-  const userID = 1;
+  const userID = 23;
   // SQL query to Following table to retrieve all users that a given user is subscribed to. Store subscribees in an array or object
   const query = `SELECT subscribee FROM "public"."Following" WHERE subscriber = '${userID}'`
 

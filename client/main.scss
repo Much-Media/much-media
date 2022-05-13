@@ -12,11 +12,11 @@
 }
 
 .border {
-    color: blue;
+  color: blue;
 }
 
 .high {
-    background-color: black;
+  background-color: black;
 }
 
 // .navbar {
@@ -35,7 +35,7 @@
 }
 
 .loginText {
-  color: white
+  color: white;
 }
 
 .feedDisplay {
@@ -70,6 +70,14 @@
   top: 25px;
 }
 
+.review {
+  border: 2px solid black;
+  position: relative;
+  left: 175px;
+  top: 75px;
+  
+}
+
 .username {
   border: 2px solid black;
   box-sizing: content-box;
@@ -79,5 +87,3 @@
   top: 25px;
   max-width: 100px;
 }
-
-
